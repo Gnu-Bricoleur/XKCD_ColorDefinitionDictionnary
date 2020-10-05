@@ -14,7 +14,7 @@ for colour in colours[1:-1]:
 	colour_name = colour_name.replace("'", "")
 	colour_HEX = values[1].strip()
 	c = Color(colour_HEX)
-	file.write("(" + str(c.red) +", "+ str(c.green) + ", " + str(c.blue) + "): ['XKCD_" + colour_name + "'],\n")
+	file.write("(" + str(int(c.red)) +", "+ str(int(c.green)) + ", " + str(int(c.blue)) + "): ['XKCD_" + colour_name + "'],\n")
 print(colours[-1].strip())
 values = colours[-1].split("\t")
 colour_name = values[0].replace(" ", "_")
