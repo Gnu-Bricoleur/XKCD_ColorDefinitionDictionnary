@@ -1,0 +1,1 @@
+# XKCD_ColorDefinitionDictionnary
